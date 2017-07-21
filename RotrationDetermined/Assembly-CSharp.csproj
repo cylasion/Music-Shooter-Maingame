@@ -50,12 +50,16 @@
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
      <Compile Include="Assets\Script\Controll\AttachtoCamera.cs" />
      <Compile Include="Assets\Script\Controll\Controll.cs" />
+     <Compile Include="Assets\Script\Controll\shoot.cs" />
      <Compile Include="Assets\Script\Player\Ammo1.cs" />
      <Compile Include="Assets\Script\Player\AmmoBehavior.cs" />
      <Compile Include="Assets\Script\Player\AmmoScript.cs" />
      <Compile Include="Assets\Script\Player\Gun.cs" />
      <Compile Include="Assets\Script\Player\Spawer1.cs" />
      <Compile Include="Assets\Script\Player\SpawerBehavior.cs" />
+     <Compile Include="Assets\Script\Target\Score.cs" />
+     <Compile Include="Assets\Script\Target\Target.cs" />
+     <Compile Include="Assets\UIScript.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

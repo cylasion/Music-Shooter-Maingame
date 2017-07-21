@@ -9,6 +9,7 @@ public class AmmoScript : MonoBehaviour {
 	float Speed;
 	float Score;
 	Vector3 Direction;
+	float time=0;
 	//Rigidbody rigidbody;
 
 	void Start () {
@@ -24,6 +25,9 @@ public class AmmoScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//rigidbody.DOMove (-Direction*50, 20 / Speed);
-		transform.DOMove (Direction * 50, 20 / Speed);
+			time+=Time.deltaTime;
+			transform.DOMove (Direction * 50, 20 / Speed);
+			Destroy (this.gameObject, 2);
+		}
 	}
-}
+

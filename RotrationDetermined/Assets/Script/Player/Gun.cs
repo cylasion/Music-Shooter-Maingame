@@ -10,27 +10,33 @@ public class Gun : MonoBehaviour {
 	Controll CameraControll;
 	Transform CameraTraform;
 	float time = 0,L;
-
+	LineRenderer DirectionLine;
+	Camera camera;
 	void Start () {
 		spawer = new Spawer1();
 		ammo = new Ammo1();
-		Debug.Log (spawer.getPrefab());
+		//Debug.Log (spawer.getPrefab());
 		gun = Object.Instantiate (spawer.getPrefab(),transform,false);
 
 		L = (Screen.height / 2) / 14;
 		GameObject g = GameObject.Find ("Main Camera");
 		CameraControll = g.GetComponent<Controll> ();
 		CameraTraform = g.GetComponent<Transform> ();
-
+		camera = g.GetComponent<Camera>();
+		DirectionLine = GetComponent<LineRenderer> ();
+	}
+	public void ShootFromGun(){
+		ammo.setDirection (AmmoDirection());
+		Object.Instantiate (ammo.getPrefab (), transform.position, transform.rotation);
 	}
 
-	void FixedUpdate () {
-		if(time > 3){
-			time = 0;
-			ammo.setDirection (AmmoDirection());
-			Object.Instantiate (ammo.getPrefab (), transform.position, transform.rotation);
-		}
-		time += Time.deltaTime;
+
+	void Update () {
+	/*	float mouseX = 0.5f;
+		float mouseY = camera.pixelHeight / 2;
+		Vector3 p = camera.ScreenToWorldPoint (new Vector3(mouseX,mouseY,camera.nearClipPlane+5));
+		DirectionLine.SetPosition (0,p);
+		DirectionLine.SetPosition (1,new Vector3(CameraTraform.position.x,CameraTraform.position.y,CameraTraform.position.z+7));*/
 	}
 
 

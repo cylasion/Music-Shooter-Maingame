@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Controll\Controll.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Target\Target.cs">
     <Files>
       <File FileName="Assets\Script\Player\SpawerBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Player\AmmoBehavior.cs" Line="32" Column="17" />
-      <File FileName="Assets\Script\Player\Ammo1.cs" Line="8" Column="20" />
+      <File FileName="Assets\Script\Player\AmmoBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Player\Ammo1.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Player\Spawer1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Player\Gun.cs" Line="52" Column="16" />
-      <File FileName="Assets\Script\Controll\Controll.cs" Line="10" Column="71" />
-      <File FileName="Assets\Script\Player\AmmoScript.cs" Line="27" Column="21" />
-      <File FileName="Assets\Script\Controll\AttachtoCamera.cs" Line="13" Column="33" />
+      <File FileName="Assets\Script\Player\AmmoScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Controll\Controll.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Controll\AttachtoCamera.cs" Line="43" Column="49" />
+      <File FileName="Assets\Script\Target\Target.cs" Line="41" Column="35" />
+      <File FileName="Assets\Script\Target\Score.cs" Line="22" Column="24" />
+      <File FileName="Assets\UIScript.cs" Line="15" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
