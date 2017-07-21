@@ -15,26 +15,10 @@ public class AttachtoCamera : MonoBehaviour {
 	public float DolechnhoNhat=0; 	//Do lech cho phep goc thay doi, ho chinh trong ca control cua cameera
 
 	public void cameraupdate(){
-	/*	Vector3 position = CameraControll.getSpawerPosition ();
-		Debug.Log (position);
-		gameObject.transform.position = position;
-	 */	float gocxoay = CameraControll.getAlpha () ;
-		if(Mathf.Abs(gocxoay-GocTrc)>DolechnhoNhat){
-
-			float mouseX = 0.5f;
+			float mouseX = 3f;
 			float mouseY = camera.pixelHeight / 2;
 			Vector3 p = camera.ScreenToWorldPoint (new Vector3(mouseX,mouseY,camera.nearClipPlane+5));
 			this.transform.position = p;
-		/*	x = L * Mathf.Cos (gocxoay* Mathf.PI / 180);
-			y = L * Mathf.Sin (gocxoay* Mathf.PI / 180);
-
-			x = CameraTraform.position.x - x;
-			y = CameraTraform.position.y + y;
-			this.transform.position = new Vector3 (x,y,this.transform.position.z);*/
-
-			GocTrc = gocxoay;
-		}
-
 	}
 
 
@@ -49,8 +33,6 @@ public class AttachtoCamera : MonoBehaviour {
 	}
 
 
-
-	// Update is called once per frame
 	void Update () {
 		cameraupdate ();
 	}

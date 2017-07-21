@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\Randomtarget.cs" />
      <Compile Include="Assets\Script\Controll\AttachtoCamera.cs" />
+     <Compile Include="Assets\Script\Controll\Control.cs" />
      <Compile Include="Assets\Script\Controll\Controll.cs" />
      <Compile Include="Assets\Script\Controll\shoot.cs" />
      <Compile Include="Assets\Script\Player\Ammo1.cs" />

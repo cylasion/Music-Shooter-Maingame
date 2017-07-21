@@ -27,7 +27,7 @@ public class Gun : MonoBehaviour {
 	}
 	public void ShootFromGun(){
 		ammo.setDirection (AmmoDirection());
-		Object.Instantiate (ammo.getPrefab (), transform.position, transform.rotation);
+		Object.Instantiate (ammo.getPrefab (), Spawerposition(), transform.rotation);
 	}
 
 
@@ -41,15 +41,10 @@ public class Gun : MonoBehaviour {
 
 
 	public Vector3 Spawerposition(){
-		
-		float gocxoay = CameraControll.getAlpha () * Mathf.PI / 180;
-
-		float x = L * Mathf.Cos (gocxoay);
-		float y = L * Mathf.Sin (gocxoay);
-
-		x = CameraTraform.position.x - x;
-		y = CameraTraform.position.y + y;
-		return new  Vector3 (x,y,this.transform.position.z);
+		float mouseX = 3f;
+		float mouseY = camera.pixelHeight / 2;
+		Vector3 p = camera.ScreenToWorldPoint (new Vector3(mouseX,mouseY,camera.nearClipPlane+5));
+		return p;
 	}
 
 	public Vector3 AmmoDirection(){
